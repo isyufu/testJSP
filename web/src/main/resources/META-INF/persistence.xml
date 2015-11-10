@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+    xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+
+
+    <persistence-unit name="webJPA" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <non-jta-data-source>java:comp/env/jdbc/postgres11</non-jta-data-source>
+        <class>comp.web.entity.Category</class>
+        <class>comp.web.entity.Product</class>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect11"/>
+        </properties>
+    </persistence-unit>
+
+    <persistence-unit name="testJPA" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>comp.web.entity.Category</class>
+        <class>comp.web.entity.Product</class>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"></property>
+            <property name="hibernate.connection.driver_class" value="org.h2.Driver"></property>
+            <property name="hibernate.connection.url" value="jdbc:h2:mem:test"></property>
+            <property name="hibernate.connection.username" value="sa"></property>
+            <property name="hibernate.connection.password" value="sa"></property>
+            <property name="hibernate.hbm2ddl.auto" value="update"></property>
+            <property name="hibernate.show_sql" value="true"></property>
+        </properties>
+    </persistence-unit>
+</persistence>

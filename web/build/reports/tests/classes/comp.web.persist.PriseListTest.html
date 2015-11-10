@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class comp.web.persist.PriseListTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class comp.web.persist.PriseListTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/comp.web.persist.html">comp.web.persist</a> &gt; PriseListTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.206s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1SaveAndRemove</td>
+<td>0.051s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2InsertManyProducts</td>
+<td>0.069s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3PriceList</td>
+<td>0.086s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Hibernate: insert into CAT (id, name) values (null, ?)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Hibernate: delete from PROD where id=?
+Hibernate: delete from CAT where id=?
+Hibernate: insert into CAT (id, name) values (null, ?)
+Hibernate: insert into CAT (id, name) values (null, ?)
+Hibernate: insert into CAT (id, name) values (null, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=принтер hp should, price=202538.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Panasonic island, price=1082.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=ПРИНТЕР EPSON ROOM, price=134666.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер Xerox light, price=125311.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=бумага снегурочка they, price=1735.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Xerox end, price=5052.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер HP hatch, price=56877.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=БУМАГА СНЕГУРОЧКА BADLY, price=1307.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер Xerox text, price=76729.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер Xerox it's, price=189077.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для HP room, price=9434.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=картридж для xerox wrong, price=6779.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Epson are, price=2714.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Panasonic in, price=5971.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер Xerox secretly, price=93964.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Снегурочка so, price=1901.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер Xerox dreams, price=76484.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер Epson of, price=135800.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=принтер panasonic my, price=12181.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Снегурочка to, price=1651.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Panasonic something, price=2850.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Снегурочка headphones, price=856.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер Epson died, price=80919.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Panasonic died, price=4638.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Фотобумага days, price=742.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Фотобумага or maybe, price=131.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для HP with, price=6801.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Снегурочка something, price=182.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=принтер hp my, price=116275.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Xerox many, price=1384.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Xerox it, price=2974.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=КАРТРИДЖ ДЛЯ XEROX DISCOVERED, price=7575.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=картридж для hp text, price=5261.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=бумага фотобумага man, price=951.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Panasonic crash, price=1264.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Xerox to, price=9372.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Снегурочка captain, price=183.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=картридж для hp leader, price=1515.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для HP assert, price=5103.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер HP sits, price=75761.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=БУМАГА СНЕГУРОЧКА THIS, price=1609.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Epson cold, price=5612.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Panasonic of, price=5904.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер Epson enter, price=3299.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для HP sacrifice, price=1177.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Фотобумага wrong, price=1810.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Снегурочка found, price=1320.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер Panasonic about, price=155771.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Panasonic badly, price=2085.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=картридж для hp discovered, price=1105.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер Panasonic room, price=13548.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Epson what, price=7753.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Снегурочка moved, price=1310.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Xerox badly, price=4088.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Снегурочка what, price=1942.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер Panasonic build, price=141161.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=бумага xerox the, price=318.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер HP plane, price=40676.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Xerox lock, price=157.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=БУМАГА СНЕГУРОЧКА DO, price=1734.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Epson man, price=9125.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Panasonic hatch, price=4359.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Фотобумага banging, price=1605.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер HP pique, price=149158.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Снегурочка hat, price=1163.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для HP came, price=9174.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер Xerox enter, price=152970.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для HP room, price=2813.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Panasonic until, price=8968.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Panasonic demanded, price=7526.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для HP visions, price=8912.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=принтер xerox ship, price=167620.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=принтер xerox magnetic, price=97419.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Xerox build, price=685.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Фотобумага suspense, price=1087.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Panasonic ill, price=6542.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Снегурочка on, price=1882.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Epson a, price=5648.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=картридж для epson ending, price=3999.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер Epson as, price=174256.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Xerox asked, price=8340.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Xerox dad, price=374.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Xerox until, price=8541.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Снегурочка much, price=1262.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Panasonic to, price=8681.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер Xerox build, price=115147.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Epson secretly, price=3472.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=БУМАГА СНЕГУРОЧКА WEB, price=440.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер Panasonic sits, price=49785.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Фотобумага numbers, price=631.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер Xerox where, price=181120.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер HP about, price=83513.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер Xerox automatically, price=33551.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=КАРТРИДЖ ДЛЯ XEROX DAYS, price=2523.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для HP fire, price=4319.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Panasonic warp, price=7982.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для HP hold, price=640.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=3, name=Картриджы), name=Картридж для Xerox to, price=728.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Xerox captain, price=1576.0)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=2, name=Принтеры), name=Принтер Xerox in, price=109986.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Product(id=0, cat=Category(id=4, name=Бумага), name=Бумага Фотобумага words, price=867.99)
+Hibernate: insert into PROD (id, CAT_ID, name, price) values (null, ?, ?, ?)
+Hibernate: select product0_.id as id1_1_, product0_.CAT_ID as CAT_ID4_1_, product0_.name as name2_1_, product0_.price as price3_1_ from PROD product0_ cross join CAT category1_ where product0_.CAT_ID=category1_.id and (lower(category1_.name) like lower(?)) and (lower(product0_.name) like lower(?)) and (product0_.price between ? and ?)
+Hibernate: select category0_.id as id1_0_0_, category0_.name as name2_0_0_ from CAT category0_ where category0_.id=?
+Hibernate: select product0_.id as id1_1_, product0_.CAT_ID as CAT_ID4_1_, product0_.name as name2_1_, product0_.price as price3_1_ from PROD product0_ cross join CAT category1_ where product0_.CAT_ID=category1_.id and (lower(category1_.name) like lower(?)) and (lower(product0_.name) like lower(?)) and (product0_.price between ? and ?)
+Hibernate: select category0_.id as id1_0_0_, category0_.name as name2_0_0_ from CAT category0_ where category0_.id=?
+Hibernate: select product0_.id as id1_1_, product0_.CAT_ID as CAT_ID4_1_, product0_.name as name2_1_, product0_.price as price3_1_ from PROD product0_ cross join CAT category1_ where product0_.CAT_ID=category1_.id and (lower(category1_.name) like lower(?)) and (lower(product0_.name) like lower(?)) and (product0_.price between ? and ?)
+Hibernate: select category0_.id as id1_0_0_, category0_.name as name2_0_0_ from CAT category0_ where category0_.id=?
+Hibernate: select product0_.id as id1_1_, product0_.CAT_ID as CAT_ID4_1_, product0_.name as name2_1_, product0_.price as price3_1_ from PROD product0_ cross join CAT category1_ where product0_.CAT_ID=category1_.id and (lower(category1_.name) like lower(?)) and (lower(product0_.name) like lower(?)) and (product0_.price between ? and ?)
+Hibernate: select category0_.id as id1_0_0_, category0_.name as name2_0_0_ from CAT category0_ where category0_.id=?
+Hibernate: select product0_.id as id1_1_, product0_.CAT_ID as CAT_ID4_1_, product0_.name as name2_1_, product0_.price as price3_1_ from PROD product0_ cross join CAT category1_ where product0_.CAT_ID=category1_.id and (lower(category1_.name) like lower(?)) and (lower(product0_.name) like lower(?)) and (product0_.price between ? and ?)
+Hibernate: select category0_.id as id1_0_0_, category0_.name as name2_0_0_ from CAT category0_ where category0_.id=?
+Hibernate: select product0_.id as id1_1_, product0_.CAT_ID as CAT_ID4_1_, product0_.name as name2_1_, product0_.price as price3_1_ from PROD product0_ cross join CAT category1_ where product0_.CAT_ID=category1_.id and (lower(category1_.name) like lower(?)) and (lower(product0_.name) like lower(?)) and (product0_.price between ? and ?)
+Hibernate: select category0_.id as id1_0_0_, category0_.name as name2_0_0_ from CAT category0_ where category0_.id=?
+Hibernate: select product0_.id as id1_1_, product0_.CAT_ID as CAT_ID4_1_, product0_.name as name2_1_, product0_.price as price3_1_ from PROD product0_ cross join CAT category1_ where product0_.CAT_ID=category1_.id and (lower(category1_.name) like lower(?)) and (lower(product0_.name) like lower(?)) and (product0_.price between ? and ?)
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>окт 19, 2015 3:39:05 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 19, 2015 3:39:05 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 19, 2015 3:39:05 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 19, 2015 3:39:06 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [
+	name: testJPA
+	...]
+окт 19, 2015 3:39:06 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.3.5.Final}
+окт 19, 2015 3:39:06 PM org.hibernate.cfg.Environment &lt;clinit&gt;
+INFO: HHH000206: hibernate.properties not found
+окт 19, 2015 3:39:06 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+окт 19, 2015 3:39:06 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager &lt;clinit&gt;
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+окт 19, 2015 3:39:06 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+окт 19, 2015 3:39:06 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test]
+окт 19, 2015 3:39:06 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=sa, password=****}
+окт 19, 2015 3:39:06 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+окт 19, 2015 3:39:06 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+окт 19, 2015 3:39:06 PM org.hibernate.dialect.Dialect &lt;init&gt;
+INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+окт 19, 2015 3:39:06 PM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory &lt;init&gt;
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+окт 19, 2015 3:39:07 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+окт 19, 2015 3:39:07 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000102: Fetching database metadata
+окт 19, 2015 3:39:07 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000396: Updating schema
+окт 19, 2015 3:39:07 PM org.hibernate.tool.hbm2ddl.DatabaseMetadata getTableMetadata
+INFO: HHH000262: Table not found: CAT
+окт 19, 2015 3:39:07 PM org.hibernate.tool.hbm2ddl.DatabaseMetadata getTableMetadata
+INFO: HHH000262: Table not found: PROD
+окт 19, 2015 3:39:07 PM org.hibernate.tool.hbm2ddl.DatabaseMetadata getTableMetadata
+INFO: HHH000262: Table not found: CAT
+окт 19, 2015 3:39:07 PM org.hibernate.tool.hbm2ddl.DatabaseMetadata getTableMetadata
+INFO: HHH000262: Table not found: PROD
+окт 19, 2015 3:39:07 PM org.hibernate.tool.hbm2ddl.DatabaseMetadata getTableMetadata
+INFO: HHH000262: Table not found: CAT
+окт 19, 2015 3:39:07 PM org.hibernate.tool.hbm2ddl.DatabaseMetadata getTableMetadata
+INFO: HHH000262: Table not found: PROD
+окт 19, 2015 3:39:07 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000232: Schema update complete
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.4</a> at 19.10.2015 15:39:07</p>
+</div>
+</div>
+</body>
+</html>

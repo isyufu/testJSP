@@ -1,0 +1,1634 @@
+окт 14, 2015 1:21:27 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 1:21:27 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 1:21:27 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+окт 14, 2015 1:21:27 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.59
+окт 14, 2015 1:21:27 AM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+INFO: No global web.xml found
+окт 14, 2015 1:21:32 AM org.apache.catalina.core.NamingContextListener addResource
+WARNING: Failed to register in JMX: javax.naming.NamingException: Could not create resource factory instance [Root exception is java.lang.ClassNotFoundException: org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory]
+окт 14, 2015 1:21:32 AM core.ContextListener contextInitialized
+SEVERE: null
+javax.naming.NamingException: Could not create resource factory instance [Root exception is java.lang.ClassNotFoundException: org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory]
+	at org.apache.naming.factory.ResourceFactory.getObjectInstance(ResourceFactory.java:119)
+	at javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:321)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:842)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:153)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:830)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:167)
+	at core.ContextListener.contextInitialized(ContextListener.java:40)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:5016)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5524)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1575)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1565)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at org.apache.naming.factory.ResourceFactory.getObjectInstance(ResourceFactory.java:115)
+	... 15 more
+
+окт 14, 2015 1:21:32 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 1:21:32 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 1:26:49 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 1:26:49 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 1:26:49 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+окт 14, 2015 1:26:49 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/8.0.1
+окт 14, 2015 1:26:50 AM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+INFO: No global web.xml found
+окт 14, 2015 1:26:50 AM org.apache.catalina.core.ContainerBase startInternal
+SEVERE: A child container failed during start
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/web]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:918)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:851)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1387)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1377)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/web]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	... 6 more
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:646)
+	at org.apache.catalina.webresources.AbstractArchiveResourceSet.list(AbstractArchiveResourceSet.java:78)
+	at org.apache.catalina.webresources.StandardRoot.list(StandardRoot.java:129)
+	at org.apache.catalina.webresources.StandardRoot.listResources(StandardRoot.java:313)
+	at org.apache.catalina.webresources.StandardRoot.listResources(StandardRoot.java:305)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1132)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:768)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:303)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 6 more
+
+окт 14, 2015 1:26:50 AM org.apache.catalina.core.ContainerBase startInternal
+SEVERE: A child container failed during start
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:918)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:439)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:744)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:340)
+	at org.apache.catalina.startup.Tomcat$start$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at com.bmuschko.gradle.tomcat.embedded.BaseTomcatServerImpl.start(BaseTomcatServerImpl.groovy:56)
+	at com.bmuschko.gradle.tomcat.embedded.TomcatServer$start$7.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at com.bmuschko.gradle.tomcat.tasks.AbstractTomcatRun.startTomcat(AbstractTomcatRun.groovy:359)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:382)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1015)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:66)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:137)
+	at com.bmuschko.gradle.tomcat.tasks.AbstractTomcatRun$_validateConfigurationAndStartTomcat_closure2.doCall(AbstractTomcatRun.groovy:228)
+	at com.bmuschko.gradle.tomcat.tasks.AbstractTomcatRun$_validateConfigurationAndStartTomcat_closure2.doCall(AbstractTomcatRun.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:292)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1015)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:39)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at com.bmuschko.gradle.tomcat.internal.LoggingHandler.withJdkFileLogger(LoggingHandler.groovy:43)
+	at com.bmuschko.gradle.tomcat.internal.LoggingHandler$withJdkFileLogger.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:157)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:177)
+	at com.bmuschko.gradle.tomcat.tasks.AbstractTomcatRun.validateConfigurationAndStartTomcat(AbstractTomcatRun.groovy:227)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:382)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1015)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:66)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:137)
+	at com.bmuschko.gradle.tomcat.tasks.AbstractTomcatRun$_start_closure1.doCall(AbstractTomcatRun.groovy:220)
+	at com.bmuschko.gradle.tomcat.tasks.AbstractTomcatRun$_start_closure1.doCall(AbstractTomcatRun.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:292)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1015)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:39)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at com.bmuschko.gradle.tomcat.internal.utils.TomcatThreadContextClassLoader.withClasspath(TomcatThreadContextClassLoader.groovy:30)
+	at com.bmuschko.gradle.tomcat.internal.utils.ThreadContextClassLoader$withClasspath.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:120)
+	at com.bmuschko.gradle.tomcat.tasks.AbstractTomcatRun.start(AbstractTomcatRun.groovy:219)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:226)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:589)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:572)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:310)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.runner.BuildModelActionRunner.run(BuildModelActionRunner.java:54)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:49)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:26)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:34)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:74)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:72)
+	at org.gradle.util.Swapper.swap(Swapper.java:38)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:72)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.DaemonHealthTracker.execute(DaemonHealthTracker.java:47)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:66)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:71)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.HintGCAfterBuild.execute(HintGCAfterBuild.java:41)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:50)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:246)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1387)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1377)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	... 3 more
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:926)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:851)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 6 more
+
+окт 14, 2015 1:26:50 AM org.apache.catalina.deploy.NamingResourcesImpl cleanUp
+WARNING: Failed to retrieve JNDI naming context for container [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/web]] so no cleanup was performed for that container
+javax.naming.NameNotFoundException: Name [comp/env] is not bound in this Context. Unable to find [comp].
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:818)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:166)
+	at org.apache.catalina.deploy.NamingResourcesImpl.cleanUp(NamingResourcesImpl.java:993)
+	at org.apache.catalina.deploy.NamingResourcesImpl.stopInternal(NamingResourcesImpl.java:975)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5382)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.Lifecycle$stop$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callSafe(AbstractCallSite.java:75)
+	at com.bmuschko.gradle.tomcat.embedded.BaseTomcatServerImpl.stop(BaseTomcatServerImpl.groovy:61)
+	at com.bmuschko.gradle.tomcat.embedded.TomcatServer$stop$8.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at com.bmuschko.gradle.tomcat.tasks.AbstractTomcatRun.stopServer(AbstractTomcatRun.groovy:404)
+	at com.bmuschko.gradle.tomcat.tasks.AbstractTomcatRun.startTomcat(AbstractTomcatRun.groovy:369)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:382)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1015)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:66)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:137)
+	at com.bmuschko.gradle.tomcat.tasks.AbstractTomcatRun$_validateConfigurationAndStartTomcat_closure2.doCall(AbstractTomcatRun.groovy:228)
+	at com.bmuschko.gradle.tomcat.tasks.AbstractTomcatRun$_validateConfigurationAndStartTomcat_closure2.doCall(AbstractTomcatRun.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:292)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1015)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:39)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at com.bmuschko.gradle.tomcat.internal.LoggingHandler.withJdkFileLogger(LoggingHandler.groovy:43)
+	at com.bmuschko.gradle.tomcat.internal.LoggingHandler$withJdkFileLogger.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:157)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:177)
+	at com.bmuschko.gradle.tomcat.tasks.AbstractTomcatRun.validateConfigurationAndStartTomcat(AbstractTomcatRun.groovy:227)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:382)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1015)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:66)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:137)
+	at com.bmuschko.gradle.tomcat.tasks.AbstractTomcatRun$_start_closure1.doCall(AbstractTomcatRun.groovy:220)
+	at com.bmuschko.gradle.tomcat.tasks.AbstractTomcatRun$_start_closure1.doCall(AbstractTomcatRun.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:292)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1015)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:39)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at com.bmuschko.gradle.tomcat.internal.utils.TomcatThreadContextClassLoader.withClasspath(TomcatThreadContextClassLoader.groovy:30)
+	at com.bmuschko.gradle.tomcat.internal.utils.ThreadContextClassLoader$withClasspath.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:120)
+	at com.bmuschko.gradle.tomcat.tasks.AbstractTomcatRun.start(AbstractTomcatRun.groovy:219)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:226)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:589)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:572)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:310)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.runner.BuildModelActionRunner.run(BuildModelActionRunner.java:54)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:49)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:26)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:34)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:74)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:72)
+	at org.gradle.util.Swapper.swap(Swapper.java:38)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:72)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.DaemonHealthTracker.execute(DaemonHealthTracker.java:47)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:66)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:71)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.HintGCAfterBuild.execute(HintGCAfterBuild.java:41)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:50)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:246)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+окт 14, 2015 1:26:50 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 1:26:50 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 1:26:50 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Tomcat
+окт 14, 2015 1:26:50 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 1:26:50 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 1:28:10 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 1:28:10 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 1:28:10 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+окт 14, 2015 1:28:10 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.30
+окт 14, 2015 1:28:11 AM org.apache.catalina.loader.WebappLoader startInternal
+INFO: Dual registration of jndi stream handler: factory already defined
+окт 14, 2015 1:28:11 AM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+INFO: No global web.xml found
+окт 14, 2015 1:28:19 AM org.apache.catalina.core.NamingContextListener addResource
+WARNING: Failed to register in JMX: javax.naming.NamingException: Could not load resource factory class [Root exception is java.lang.ClassNotFoundException: org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory]
+окт 14, 2015 1:28:19 AM org.apache.catalina.core.NamingContextListener addResource
+WARNING: Failed to register in JMX: javax.naming.NamingException: Could not create resource factory instance [Root exception is java.lang.ClassNotFoundException: org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory]
+окт 14, 2015 1:28:19 AM core.ContextListener contextInitialized
+SEVERE: null
+javax.naming.NamingException: Could not create resource factory instance [Root exception is java.lang.ClassNotFoundException: org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory]
+	at org.apache.naming.factory.ResourceFactory.getObjectInstance(ResourceFactory.java:121)
+	at javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:321)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:843)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:154)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:831)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:168)
+	at core.ContextListener.contextInitialized(ContextListener.java:40)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4791)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5285)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at org.apache.naming.factory.ResourceFactory.getObjectInstance(ResourceFactory.java:117)
+	... 15 more
+
+окт 14, 2015 1:28:19 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 1:28:19 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 1:35:37 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 1:35:37 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 1:35:37 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+окт 14, 2015 1:35:37 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.30
+окт 14, 2015 1:35:38 AM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+INFO: No global web.xml found
+окт 14, 2015 1:35:43 AM org.apache.catalina.core.NamingContextListener addResource
+WARNING: Failed to register in JMX: javax.naming.NamingException: Could not create resource factory instance [Root exception is java.lang.ClassNotFoundException: org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory]
+окт 14, 2015 1:35:43 AM core.ContextListener contextInitialized
+SEVERE: null
+javax.naming.NamingException: Could not create resource factory instance [Root exception is java.lang.ClassNotFoundException: org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory]
+	at org.apache.naming.factory.ResourceFactory.getObjectInstance(ResourceFactory.java:121)
+	at javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:321)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:843)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:154)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:831)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:154)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:831)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:154)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:831)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:168)
+	at org.apache.naming.SelectorContext.lookup(SelectorContext.java:158)
+	at javax.naming.InitialContext.lookup(InitialContext.java:417)
+	at core.ContextListener.contextInitialized(ContextListener.java:38)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4791)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5285)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at org.apache.naming.factory.ResourceFactory.getObjectInstance(ResourceFactory.java:117)
+	... 21 more
+
+окт 14, 2015 1:35:43 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 1:35:43 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 1:36:11 AM org.apache.jasper.compiler.JDTCompiler$1 findType
+SEVERE: Compilation error
+org.eclipse.jdt.internal.compiler.classfmt.ClassFormatException
+	at org.eclipse.jdt.internal.compiler.classfmt.ClassFileReader.<init>(ClassFileReader.java:372)
+	at org.apache.jasper.compiler.JDTCompiler$1.findType(JDTCompiler.java:232)
+	at org.apache.jasper.compiler.JDTCompiler$1.findType(JDTCompiler.java:188)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:113)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:49)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:122)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getTypeFromTypeSignature(LookupEnvironment.java:1335)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getTypeFromVariantTypeSignature(LookupEnvironment.java:1391)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getTypeArgumentsFromSignature(LookupEnvironment.java:1172)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getTypeFromTypeSignature(LookupEnvironment.java:1340)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.createMethod(BinaryTypeBinding.java:550)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.createMethods(BinaryTypeBinding.java:630)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.cachePartsFrom(BinaryTypeBinding.java:365)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.createBinaryTypeFrom(LookupEnvironment.java:688)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.createBinaryTypeFrom(LookupEnvironment.java:667)
+	at org.eclipse.jdt.internal.compiler.Compiler.accept(Compiler.java:296)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:118)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:49)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:122)
+	at org.eclipse.jdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:168)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getPackage(Scope.java:2379)
+	at org.eclipse.jdt.internal.compiler.ast.ParameterizedQualifiedTypeReference.internalResolveLeafType(ParameterizedQualifiedTypeReference.java:138)
+	at org.eclipse.jdt.internal.compiler.ast.ParameterizedQualifiedTypeReference.internalResolveType(ParameterizedQualifiedTypeReference.java:132)
+	at org.eclipse.jdt.internal.compiler.ast.ParameterizedQualifiedTypeReference.resolveType(ParameterizedQualifiedTypeReference.java:351)
+	at org.eclipse.jdt.internal.compiler.lookup.SourceTypeBinding.resolveTypeFor(SourceTypeBinding.java:1374)
+	at org.eclipse.jdt.internal.compiler.lookup.SourceTypeBinding.fields(SourceTypeBinding.java:699)
+	at org.eclipse.jdt.internal.compiler.lookup.SourceTypeBinding.faultInTypesForFieldsAndMethods(SourceTypeBinding.java:677)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.faultInTypes(CompilationUnitScope.java:469)
+	at org.eclipse.jdt.internal.compiler.Compiler.process(Compiler.java:756)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:468)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:459)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:722)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1002)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:585)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+окт 14, 2015 1:36:12 AM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/web] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 1 in the generated java file
+The type java.util.Map$Entry cannot be resolved. It is indirectly referenced from required .class files
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 1 in the generated java file
+The type java.util.Map$Entry cannot be resolved. It is indirectly referenced from required .class files
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:331)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:469)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:722)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1002)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:585)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+окт 14, 2015 1:40:38 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 1:40:38 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 1:40:38 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+окт 14, 2015 1:40:38 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.30
+окт 14, 2015 1:40:38 AM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+INFO: No global web.xml found
+окт 14, 2015 1:40:45 AM org.apache.catalina.core.NamingContextListener addResource
+WARNING: Failed to register in JMX: javax.naming.NamingException: Could not load resource factory class [Root exception is java.lang.ClassNotFoundException: org.apache.commons.dbcp.BasicDataSourceFactory]
+окт 14, 2015 1:40:45 AM core.ContextListener contextInitialized
+SEVERE: null
+javax.naming.NamingException: Could not load resource factory class [Root exception is java.lang.ClassNotFoundException: org.apache.commons.dbcp.BasicDataSourceFactory]
+	at org.apache.naming.factory.ResourceFactory.getObjectInstance(ResourceFactory.java:84)
+	at javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:321)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:843)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:154)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:831)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:154)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:831)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:154)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:831)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:168)
+	at org.apache.naming.SelectorContext.lookup(SelectorContext.java:158)
+	at javax.naming.InitialContext.lookup(InitialContext.java:417)
+	at core.ContextListener.contextInitialized(ContextListener.java:38)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4791)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5285)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.dbcp.BasicDataSourceFactory
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1714)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1559)
+	at org.apache.naming.factory.ResourceFactory.getObjectInstance(ResourceFactory.java:82)
+	... 21 more
+
+окт 14, 2015 1:40:45 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 1:40:45 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 1:42:47 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 1:42:47 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 1:42:47 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+окт 14, 2015 1:42:47 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.30
+окт 14, 2015 1:42:47 AM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+INFO: No global web.xml found
+окт 14, 2015 1:42:54 AM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 1:42:54 AM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 1:42:54 AM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 1:42:55 AM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.3.5.Final}
+окт 14, 2015 1:42:55 AM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+окт 14, 2015 1:42:55 AM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+окт 14, 2015 1:42:55 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+окт 14, 2015 1:42:56 AM org.hibernate.engine.jdbc.internal.JdbcServicesImpl configure
+WARN: HHH000342: Could not obtain connection to query metadata : Cannot load JDBC driver class 'org.postgresql.Driver'
+окт 14, 2015 1:42:56 AM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+окт 14, 2015 1:42:56 AM org.hibernate.engine.jdbc.internal.LobCreatorBuilder useContextualLobCreation
+INFO: HHH000422: Disabling contextual LOB creation as connection was null
+окт 14, 2015 1:42:56 AM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory <init>
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+окт 14, 2015 1:42:57 AM core.ContextListener contextInitialized
+INFO: contextInitialized
+окт 14, 2015 1:42:57 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 1:42:57 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 1:45:10 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 1:45:10 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 1:45:10 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+окт 14, 2015 1:45:10 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.30
+окт 14, 2015 1:45:10 AM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+INFO: No global web.xml found
+окт 14, 2015 1:45:17 AM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 1:45:17 AM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 1:45:17 AM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 1:45:18 AM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.3.5.Final}
+окт 14, 2015 1:45:18 AM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+окт 14, 2015 1:45:18 AM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+окт 14, 2015 1:45:18 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+окт 14, 2015 1:45:19 AM org.hibernate.engine.jdbc.internal.JdbcServicesImpl configure
+WARN: HHH000342: Could not obtain connection to query metadata : Cannot create PoolableConnectionFactory (�����: � pg_hba.conf ��� ������, ����������� ����������� ��� ���������� � ���������� "10.22.1.95" ��� ������������ "postgres", ���� ������ "postgres", SSL ����.)
+окт 14, 2015 1:45:19 AM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+окт 14, 2015 1:45:19 AM org.hibernate.engine.jdbc.internal.LobCreatorBuilder useContextualLobCreation
+INFO: HHH000422: Disabling contextual LOB creation as connection was null
+окт 14, 2015 1:45:19 AM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory <init>
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+окт 14, 2015 1:45:19 AM core.ContextListener contextInitialized
+INFO: contextInitialized
+окт 14, 2015 1:45:19 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 1:45:19 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 1:45:42 AM org.apache.jasper.compiler.JDTCompiler$1 findType
+SEVERE: Compilation error
+org.eclipse.jdt.internal.compiler.classfmt.ClassFormatException
+	at org.eclipse.jdt.internal.compiler.classfmt.ClassFileReader.<init>(ClassFileReader.java:372)
+	at org.apache.jasper.compiler.JDTCompiler$1.findType(JDTCompiler.java:232)
+	at org.apache.jasper.compiler.JDTCompiler$1.findType(JDTCompiler.java:188)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:113)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:49)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:122)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getTypeFromTypeSignature(LookupEnvironment.java:1335)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getTypeFromVariantTypeSignature(LookupEnvironment.java:1391)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getTypeArgumentsFromSignature(LookupEnvironment.java:1172)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getTypeFromTypeSignature(LookupEnvironment.java:1340)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.createMethod(BinaryTypeBinding.java:550)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.createMethods(BinaryTypeBinding.java:630)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.cachePartsFrom(BinaryTypeBinding.java:365)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.createBinaryTypeFrom(LookupEnvironment.java:688)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.createBinaryTypeFrom(LookupEnvironment.java:667)
+	at org.eclipse.jdt.internal.compiler.Compiler.accept(Compiler.java:296)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:118)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:49)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:122)
+	at org.eclipse.jdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:168)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getPackage(Scope.java:2379)
+	at org.eclipse.jdt.internal.compiler.ast.ParameterizedQualifiedTypeReference.internalResolveLeafType(ParameterizedQualifiedTypeReference.java:138)
+	at org.eclipse.jdt.internal.compiler.ast.ParameterizedQualifiedTypeReference.internalResolveType(ParameterizedQualifiedTypeReference.java:132)
+	at org.eclipse.jdt.internal.compiler.ast.ParameterizedQualifiedTypeReference.resolveType(ParameterizedQualifiedTypeReference.java:351)
+	at org.eclipse.jdt.internal.compiler.lookup.SourceTypeBinding.resolveTypeFor(SourceTypeBinding.java:1374)
+	at org.eclipse.jdt.internal.compiler.lookup.SourceTypeBinding.fields(SourceTypeBinding.java:699)
+	at org.eclipse.jdt.internal.compiler.lookup.SourceTypeBinding.faultInTypesForFieldsAndMethods(SourceTypeBinding.java:677)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.faultInTypes(CompilationUnitScope.java:469)
+	at org.eclipse.jdt.internal.compiler.Compiler.process(Compiler.java:756)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:468)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:459)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:722)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1002)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:585)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+окт 14, 2015 1:45:43 AM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/web] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 1 in the generated java file
+The type java.util.Map$Entry cannot be resolved. It is indirectly referenced from required .class files
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 1 in the generated java file
+The type java.util.Map$Entry cannot be resolved. It is indirectly referenced from required .class files
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:331)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:469)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:722)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1002)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:585)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+окт 14, 2015 1:47:08 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 1:47:08 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 1:47:08 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+окт 14, 2015 1:47:08 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.59
+окт 14, 2015 1:47:08 AM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+INFO: No global web.xml found
+окт 14, 2015 1:47:13 AM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 1:47:13 AM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 1:47:13 AM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 1:47:14 AM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.3.5.Final}
+окт 14, 2015 1:47:14 AM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+окт 14, 2015 1:47:14 AM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+окт 14, 2015 1:47:14 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+окт 14, 2015 1:47:14 AM org.hibernate.engine.jdbc.internal.JdbcServicesImpl configure
+WARN: HHH000342: Could not obtain connection to query metadata : Cannot create PoolableConnectionFactory (�����: � pg_hba.conf ��� ������, ����������� ����������� ��� ���������� � ���������� "10.22.1.95" ��� ������������ "postgres", ���� ������ "postgres", SSL ����.)
+окт 14, 2015 1:47:14 AM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+окт 14, 2015 1:47:14 AM org.hibernate.engine.jdbc.internal.LobCreatorBuilder useContextualLobCreation
+INFO: HHH000422: Disabling contextual LOB creation as connection was null
+окт 14, 2015 1:47:14 AM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory <init>
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+окт 14, 2015 1:47:15 AM core.ContextListener contextInitialized
+INFO: contextInitialized
+окт 14, 2015 1:47:15 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 1:47:15 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 7:26:35 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 7:26:35 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 7:26:35 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+окт 14, 2015 7:26:35 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.59
+окт 14, 2015 7:26:36 PM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+INFO: No global web.xml found
+окт 14, 2015 7:26:41 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 7:26:41 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 7:26:41 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 7:26:42 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.3.5.Final}
+окт 14, 2015 7:26:42 PM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+окт 14, 2015 7:26:42 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+окт 14, 2015 7:26:42 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+окт 14, 2015 7:26:42 PM org.hibernate.engine.jdbc.internal.JdbcServicesImpl configure
+WARN: HHH000342: Could not obtain connection to query metadata : Cannot create PoolableConnectionFactory (�����: � pg_hba.conf ��� ������, ����������� ����������� ��� ���������� � ���������� "10.22.1.92" ��� ������������ "postgres", ���� ������ "postgres", SSL ����.)
+окт 14, 2015 7:26:42 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+окт 14, 2015 7:26:42 PM org.hibernate.engine.jdbc.internal.LobCreatorBuilder useContextualLobCreation
+INFO: HHH000422: Disabling contextual LOB creation as connection was null
+окт 14, 2015 7:26:43 PM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory <init>
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+окт 14, 2015 7:26:43 PM core.ContextListener contextInitialized
+INFO: contextInitialized
+окт 14, 2015 7:26:43 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 7:26:43 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 9:02:21 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 9:02:21 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 9:02:21 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+окт 14, 2015 9:02:21 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.59
+окт 14, 2015 9:02:22 PM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+INFO: No global web.xml found
+окт 14, 2015 9:02:26 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 9:02:26 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 9:02:26 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 9:02:26 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.3.5.Final}
+окт 14, 2015 9:02:27 PM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+окт 14, 2015 9:02:27 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+окт 14, 2015 9:02:27 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+окт 14, 2015 9:02:27 PM org.hibernate.engine.jdbc.internal.JdbcServicesImpl configure
+WARN: HHH000342: Could not obtain connection to query metadata : Cannot create PoolableConnectionFactory (�����: � pg_hba.conf ��� ������, ����������� ����������� ��� ���������� � ���������� "10.22.1.92" ��� ������������ "postgres", ���� ������ "postgres", SSL ����.)
+окт 14, 2015 9:02:27 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+окт 14, 2015 9:02:27 PM org.hibernate.engine.jdbc.internal.LobCreatorBuilder useContextualLobCreation
+INFO: HHH000422: Disabling contextual LOB creation as connection was null
+окт 14, 2015 9:02:27 PM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory <init>
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+окт 14, 2015 9:02:28 PM core.ContextListener contextInitialized
+INFO: contextInitialized
+окт 14, 2015 9:02:28 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 9:02:28 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 9:02:34 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/web] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 66 in the jsp file: /PriceList.jsp
+The method getProds(EntityManagerFactory, String, String, String, String) in the type Test is not applicable for the arguments (Object, Object, Object, Object, Object)
+63:             <td class="col-md-4" ><fmt:message key="pricelist.label.price" /></td>
+64:           </tr>
+65:             <%
+66:                 List<Product> prods = test.getProds(
+67:                     request.getAttribute("emf"), request.getAttribute("cat"), 
+68:                     request.getAttribute("prod"), request.getAttribute("priceFrom"), 
+69:                     request.getAttribute("priceTo"));
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 66 in the jsp file: /PriceList.jsp
+The method getProds(EntityManagerFactory, String, String, String, String) in the type Test is not applicable for the arguments (Object, Object, Object, Object, Object)
+63:             <td class="col-md-4" ><fmt:message key="pricelist.label.price" /></td>
+64:           </tr>
+65:             <%
+66:                 List<Product> prods = test.getProds(
+67:                     request.getAttribute("emf"), request.getAttribute("cat"), 
+68:                     request.getAttribute("prod"), request.getAttribute("priceFrom"), 
+69:                     request.getAttribute("priceTo"));
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+окт 14, 2015 9:18:28 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 9:18:28 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 9:18:28 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+окт 14, 2015 9:18:28 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.59
+окт 14, 2015 9:18:29 PM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+INFO: No global web.xml found
+окт 14, 2015 9:18:34 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 9:18:34 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 9:18:34 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 9:18:34 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.3.5.Final}
+окт 14, 2015 9:18:34 PM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+окт 14, 2015 9:18:34 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+окт 14, 2015 9:18:35 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+окт 14, 2015 9:18:35 PM org.hibernate.engine.jdbc.internal.JdbcServicesImpl configure
+WARN: HHH000342: Could not obtain connection to query metadata : Cannot create PoolableConnectionFactory (�����: � pg_hba.conf ��� ������, ����������� ����������� ��� ���������� � ���������� "10.22.1.92" ��� ������������ "postgres", ���� ������ "postgres", SSL ����.)
+окт 14, 2015 9:18:35 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+окт 14, 2015 9:18:35 PM org.hibernate.engine.jdbc.internal.LobCreatorBuilder useContextualLobCreation
+INFO: HHH000422: Disabling contextual LOB creation as connection was null
+окт 14, 2015 9:18:35 PM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory <init>
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+окт 14, 2015 9:18:36 PM core.ContextListener contextInitialized
+INFO: contextInitialized
+окт 14, 2015 9:18:36 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 9:18:36 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 9:18:41 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/web] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the generated java file: [C:\Users\Ivan\Documents\NetBeansProjects\TestWebApp\web\build\tmp\tomcatRun\work\Tomcat\localhost\web\org\apache\jsp\PriceList_jsp.java]
+Syntax error on token "import", Name expected after this token
+
+An error occurred at line: 71 in the jsp file: /PriceList.jsp
+Syntax error, insert ")" to complete Expression
+68:                 List<Product> prods = test.getProds(
+69:                     (EntityManagerFactory)request.getAttribute("emf"), 
+70:                     filter.getCat(), filter.getProd(), filter.getPriceFrom(), 
+71:                     filter.getPriceTo();
+72:                 for(Product p : prods) {
+73:                     %>
+74:                         <tr>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the generated java file: [C:\Users\Ivan\Documents\NetBeansProjects\TestWebApp\web\build\tmp\tomcatRun\work\Tomcat\localhost\web\org\apache\jsp\PriceList_jsp.java]
+Syntax error on token "import", Name expected after this token
+
+An error occurred at line: 71 in the jsp file: /PriceList.jsp
+Syntax error, insert ")" to complete Expression
+68:                 List<Product> prods = test.getProds(
+69:                     (EntityManagerFactory)request.getAttribute("emf"), 
+70:                     filter.getCat(), filter.getProd(), filter.getPriceFrom(), 
+71:                     filter.getPriceTo();
+72:                 for(Product p : prods) {
+73:                     %>
+74:                         <tr>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+окт 14, 2015 9:21:02 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 9:21:02 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 9:21:02 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+окт 14, 2015 9:21:02 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.59
+окт 14, 2015 9:21:02 PM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+INFO: No global web.xml found
+окт 14, 2015 9:21:07 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 9:21:07 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 9:21:07 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 9:21:07 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.3.5.Final}
+окт 14, 2015 9:21:07 PM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+окт 14, 2015 9:21:07 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+окт 14, 2015 9:21:08 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+окт 14, 2015 9:21:08 PM org.hibernate.engine.jdbc.internal.JdbcServicesImpl configure
+WARN: HHH000342: Could not obtain connection to query metadata : Cannot create PoolableConnectionFactory (�����: � pg_hba.conf ��� ������, ����������� ����������� ��� ���������� � ���������� "10.22.1.92" ��� ������������ "postgres", ���� ������ "postgres", SSL ����.)
+окт 14, 2015 9:21:08 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+окт 14, 2015 9:21:08 PM org.hibernate.engine.jdbc.internal.LobCreatorBuilder useContextualLobCreation
+INFO: HHH000422: Disabling contextual LOB creation as connection was null
+окт 14, 2015 9:21:09 PM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory <init>
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+окт 14, 2015 9:21:09 PM core.ContextListener contextInitialized
+INFO: contextInitialized
+окт 14, 2015 9:21:09 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 9:21:09 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 9:21:18 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/web] threw exception [An exception occurred processing JSP page /PriceList.jsp at line 68
+
+65:             <td class="col-md-4" ><fmt:message key="pricelist.label.price" /></td>
+66:           </tr>
+67:             <%                
+68:                 List<Product> prods = test.getProds(
+69:                     (EntityManagerFactory)request.getAttribute("emf"), 
+70:                     filter.getCat(), filter.getProd(), filter.getPriceFrom(), 
+71:                     filter.getPriceTo());
+
+
+Stacktrace:] with root cause
+java.lang.NullPointerException
+	at core.Test.getProds(Test.java:42)
+	at org.apache.jsp.PriceList_jsp._jspService(PriceList_jsp.java:190)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+окт 14, 2015 9:34:52 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 9:34:53 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 9:34:53 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+окт 14, 2015 9:34:53 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.59
+окт 14, 2015 9:34:53 PM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+INFO: No global web.xml found
+окт 14, 2015 9:34:58 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 9:34:58 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 9:34:58 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 9:34:58 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.3.5.Final}
+окт 14, 2015 9:34:58 PM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+окт 14, 2015 9:34:58 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+окт 14, 2015 9:34:59 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+окт 14, 2015 9:34:59 PM org.hibernate.engine.jdbc.internal.JdbcServicesImpl configure
+WARN: HHH000342: Could not obtain connection to query metadata : Cannot create PoolableConnectionFactory (�����: � pg_hba.conf ��� ������, ����������� ����������� ��� ���������� � ���������� "10.22.1.92" ��� ������������ "postgres", ���� ������ "postgres", SSL ����.)
+окт 14, 2015 9:34:59 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+окт 14, 2015 9:34:59 PM org.hibernate.engine.jdbc.internal.LobCreatorBuilder useContextualLobCreation
+INFO: HHH000422: Disabling contextual LOB creation as connection was null
+окт 14, 2015 9:34:59 PM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory <init>
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+окт 14, 2015 9:35:00 PM core.ContextListener contextInitialized
+INFO: contextInitialized
+окт 14, 2015 9:35:00 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 9:35:00 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 9:35:35 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/web] threw exception [An exception occurred processing JSP page /PriceList.jsp at line 68
+
+65:             <td class="col-md-4" ><fmt:message key="pricelist.label.price" /></td>
+66:           </tr>
+67:             <%                
+68:                 List<Product> prods = test.getProds(
+69:                     (EntityManagerFactory)request.getAttribute("emf"), 
+70:                     filter.getCat(), filter.getProd(), filter.getPriceFrom(), 
+71:                     filter.getPriceTo());
+
+
+Stacktrace:] with root cause
+java.lang.NullPointerException
+	at core.Test.getProds(Test.java:42)
+	at org.apache.jsp.PriceList_jsp._jspService(PriceList_jsp.java:190)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+окт 14, 2015 10:09:45 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 10:09:45 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 10:09:45 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+окт 14, 2015 10:09:45 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.59
+окт 14, 2015 10:09:45 PM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+INFO: No global web.xml found
+окт 14, 2015 10:09:50 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 10:09:50 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 10:10:09 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 10:10:09 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 10:10:09 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 10:10:10 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.3.5.Final}
+окт 14, 2015 10:10:10 PM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+окт 14, 2015 10:10:10 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+окт 14, 2015 10:10:10 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+окт 14, 2015 10:10:10 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/web] threw exception [An exception occurred processing JSP page /PriceList.jsp at line 68
+
+65:             <td class="col-md-4" ><fmt:message key="pricelist.label.price" /></td>
+66:           </tr>
+67:             <%                
+68:                 List<Product> prods = jpaUtil.getProds(filter.getCat(), 
+69:                     filter.getProd(), filter.getPriceFrom(), filter.getPriceTo());
+70:                 for(Product p : prods) {
+71:                     %>
+
+
+Stacktrace:] with root cause
+javax.naming.NameNotFoundException: Name [java:comp/env/jdbc/postgres] is not bound in this Context. Unable to find [java:comp].
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:819)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:153)
+	at javax.naming.InitialContext.lookup(InitialContext.java:421)
+	at org.hibernate.engine.jndi.internal.JndiServiceImpl.locate(JndiServiceImpl.java:114)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.configure(DatasourceConnectionProviderImpl.java:115)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:111)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:234)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:206)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.buildJdbcConnectionAccess(JdbcServicesImpl.java:260)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:94)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:111)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:234)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:206)
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1885)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1843)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:850)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:843)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:397)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:842)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:75)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:54)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:39)
+	at database.JpaUtil.getEmf(JpaUtil.java:33)
+	at database.JpaUtil.getProds(JpaUtil.java:49)
+	at org.apache.jsp.PriceList_jsp._jspService(PriceList_jsp.java:189)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+окт 14, 2015 10:12:52 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 10:12:52 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 10:12:52 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+окт 14, 2015 10:12:52 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.59
+окт 14, 2015 10:12:53 PM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+INFO: No global web.xml found
+окт 14, 2015 10:12:57 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 10:12:57 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 10:13:02 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 10:13:02 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 10:13:02 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 10:13:02 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.3.5.Final}
+окт 14, 2015 10:13:02 PM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+окт 14, 2015 10:13:02 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+окт 14, 2015 10:13:03 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+окт 14, 2015 10:13:03 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/web] threw exception [An exception occurred processing JSP page /PriceList.jsp at line 68
+
+65:             <td class="col-md-4" ><fmt:message key="pricelist.label.price" /></td>
+66:           </tr>
+67:             <%                
+68:                 List<Product> prods = jpaUtil.getProds(filter.getCat(), 
+69:                     filter.getProd(), filter.getPriceFrom(), filter.getPriceTo());
+70:                 for(Product p : prods) {
+71:                     %>
+
+
+Stacktrace:] with root cause
+javax.naming.NameNotFoundException: Name [jdbc/postgres] is not bound in this Context. Unable to find [jdbc].
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:819)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:153)
+	at javax.naming.InitialContext.lookup(InitialContext.java:421)
+	at org.hibernate.engine.jndi.internal.JndiServiceImpl.locate(JndiServiceImpl.java:114)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.configure(DatasourceConnectionProviderImpl.java:115)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:111)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:234)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:206)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.buildJdbcConnectionAccess(JdbcServicesImpl.java:260)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:94)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:111)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:234)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:206)
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1885)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1843)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:850)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:843)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:397)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:842)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:75)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:54)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:39)
+	at database.JpaUtil.getEmf(JpaUtil.java:33)
+	at database.JpaUtil.getProds(JpaUtil.java:49)
+	at org.apache.jsp.PriceList_jsp._jspService(PriceList_jsp.java:189)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+окт 14, 2015 10:29:32 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 10:29:32 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 10:29:32 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+окт 14, 2015 10:29:32 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.59
+окт 14, 2015 10:29:32 PM org.apache.tomcat.util.digester.Digester fatalError
+SEVERE: Parse Fatal Error at line 34 column 3: The element type "Resource" must be terminated by the matching end-tag "</Resource>".
+org.xml.sax.SAXParseException; systemId: file:/C:/Users/Ivan/Documents/NetBeansProjects/TestWebApp/web/context.xml; lineNumber: 34; columnNumber: 3; The element type "Resource" must be terminated by the matching end-tag "</Resource>".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1437)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1749)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2973)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:649)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1561)
+	at org.apache.catalina.startup.ContextConfig.processContextConfig(ContextConfig.java:649)
+	at org.apache.catalina.startup.ContextConfig.contextConfig(ContextConfig.java:611)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:850)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:397)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:110)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1575)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1565)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+окт 14, 2015 10:29:32 PM org.apache.catalina.startup.ContextConfig processContextConfig
+SEVERE: Parse error in context.xml for /web
+org.xml.sax.SAXParseException; systemId: file:/C:/Users/Ivan/Documents/NetBeansProjects/TestWebApp/web/context.xml; lineNumber: 34; columnNumber: 3; The element type "Resource" must be terminated by the matching end-tag "</Resource>".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1437)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1749)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2973)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:649)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1561)
+	at org.apache.catalina.startup.ContextConfig.processContextConfig(ContextConfig.java:649)
+	at org.apache.catalina.startup.ContextConfig.contextConfig(ContextConfig.java:611)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:850)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:397)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:110)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1575)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1565)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+окт 14, 2015 10:29:32 PM org.apache.catalina.startup.ContextConfig processContextConfig
+SEVERE: Occurred at line 34 column 3
+окт 14, 2015 10:29:32 PM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+INFO: No global web.xml found
+окт 14, 2015 10:29:32 PM org.apache.catalina.startup.ContextConfig configureStart
+SEVERE: Marking this application unavailable due to previous error(s)
+окт 14, 2015 10:29:35 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+окт 14, 2015 10:29:35 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/web] startup failed due to previous errors
+окт 14, 2015 10:29:35 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/web] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+окт 14, 2015 10:29:35 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 10:29:35 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 10:30:37 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 10:30:37 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 10:30:37 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+окт 14, 2015 10:30:37 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.59
+окт 14, 2015 10:30:38 PM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+INFO: No global web.xml found
+окт 14, 2015 10:30:42 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+окт 14, 2015 10:30:42 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+окт 14, 2015 10:30:47 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 10:30:47 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 10:30:47 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+окт 14, 2015 10:30:48 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.3.5.Final}
+окт 14, 2015 10:30:48 PM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+окт 14, 2015 10:30:48 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+окт 14, 2015 10:30:48 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+окт 14, 2015 10:30:48 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/web] threw exception [An exception occurred processing JSP page /PriceList.jsp at line 68
+
+65:             <td class="col-md-4" ><fmt:message key="pricelist.label.price" /></td>
+66:           </tr>
+67:             <%                
+68:                 List<Product> prods = jpaUtil.getProds(filter.getCat(), 
+69:                     filter.getProd(), filter.getPriceFrom(), filter.getPriceTo());
+70:                 for(Product p : prods) {
+71:                     %>
+
+
+Stacktrace:] with root cause
+javax.naming.NameNotFoundException: Name [java:comp/env/jdbc/postgres] is not bound in this Context. Unable to find [java:comp].
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:819)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:153)
+	at javax.naming.InitialContext.lookup(InitialContext.java:421)
+	at org.hibernate.engine.jndi.internal.JndiServiceImpl.locate(JndiServiceImpl.java:114)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.configure(DatasourceConnectionProviderImpl.java:115)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:111)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:234)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:206)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.buildJdbcConnectionAccess(JdbcServicesImpl.java:260)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:94)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:111)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:234)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:206)
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1885)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1843)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:850)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:843)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:397)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:842)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:75)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:54)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:39)
+	at database.JpaUtil.getEmf(JpaUtil.java:33)
+	at database.JpaUtil.getProds(JpaUtil.java:49)
+	at org.apache.jsp.PriceList_jsp._jspService(PriceList_jsp.java:189)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
